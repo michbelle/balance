@@ -29,6 +29,6 @@ void loop() {
   sei();
 
   Serial.print(F("velocity = "));//print the velocity
-  rads=angle/anglespaces*result/delayer;
+  rads=angle/anglespaces*result/delayer*1000;
   Serial.println(rads);
 }
